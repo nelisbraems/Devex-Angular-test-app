@@ -2,13 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { TextboxComponent } from './textbox/textbox.component';
+import { DxTextBoxModule } from 'devextreme-angular';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TextboxComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    DxTextBoxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
